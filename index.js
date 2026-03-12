@@ -64,3 +64,65 @@ const result4 = numbers2.filter((number) => {
   let compruebaImpar = number % 2;
   if (compruebaImpar != 0) return number;
 });
+
+//Ejercicio 5
+
+const foodList2 = [
+  {
+    name: "Tempeh",
+    isVeggie: true,
+  },
+  {
+    name: "Cheesbacon burguer",
+    isVeggie: false,
+  },
+  {
+    name: "Tofu burguer",
+    isVeggie: true,
+  },
+  {
+    name: "Entrecot",
+    isVeggie: false,
+  },
+];
+
+const veganos = foodList2.filter((plato) => {
+  return plato.isVeggie == true;
+});
+
+const result5 = veganos.map((platoVegano) => {
+  if (platoVegano.name == "Tempeh")
+    return `Que rico ${platoVegano.name} me voy a comer!`;
+  if (platoVegano.name == "Tofu burguer")
+    return `Que rica ${platoVegano.name} me voy a comer!`;
+});
+
+//Ejercicio 6
+
+const inventory = [
+  {
+    name: "Mobile phone",
+    price: 199,
+  },
+  {
+    name: "TV Samsung",
+    price: 459,
+  },
+  {
+    name: "Viaje a Cancún",
+    price: 600,
+  },
+  {
+    name: "Mascarilla",
+    price: 1,
+  },
+];
+
+const elementosFiltrados = inventory.filter((elemento) => {
+    return elemento.price > 300
+  }
+);
+
+const result6 = elementosFiltrados.map((elemento) => {
+  return elemento.name;
+});
