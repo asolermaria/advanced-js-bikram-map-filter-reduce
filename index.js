@@ -55,3 +55,12 @@ const staff = [
 const result3 = staff.map((persona) => {
   return `${persona.name} es ${persona.role} y le gusta ${persona.hobbies.join(" y ")}`;
 });
+
+//Ejercicio 4
+
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const result4 = numbers2.filter((number) => {
+  let compruebaImpar = number % 2;
+  if (compruebaImpar != 0) return number;
+});
